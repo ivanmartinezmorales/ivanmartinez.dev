@@ -1,18 +1,19 @@
-require(`dotenv`).config({
-  path: `.env`,
+require(`dotenv`).config({ path: `.env`,
 })
 
 const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
 
 module.exports = {
   siteMetadata: {
-    siteTitleAlt: `Minimal Blog - Gatsby Theme`,
+	  siteTitle: `ivanmartinez.dev`,
+    siteTitleAlt: `ivanmartinez.dev`
   },
   plugins: [
     {
       resolve: `@lekoarts/gatsby-theme-minimal-blog`,
       // See the theme's README for all available options
       options: {
+	      feedTitle: "ivanmartinez.dev",
         navigation: [
           {
             title: `Blog`,
@@ -25,12 +26,12 @@ module.exports = {
         ],
         externalLinks: [
           {
-            name: `Twitter`,
-            url: `https://twitter.com/lekoarts_de`,
+            name: `Github`,
+            url: `https://github.com/ivanmartinezmorales`,
           },
           {
-            name: `Instagram`,
-            url: `https://www.instagram.com/lekoarts.de/`,
+            name: `Twitter`,
+            url: `https://www.twitter.com/imartinezmo/`,
           },
         ],
       },
