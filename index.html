@@ -1,18 +1,21 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ivan Martinez Morales</title>
     <link rel="stylesheet" href="https://vanillacss.com/vanilla.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.8.2/devicon.min.css">
     <link rel="icon" href="favicon.ico">
+    <!-- styles TODO: Move these into a separate file -->
     <style>
         body {
-            margin:0 auto;
-            max-width:50rem;
+            margin: 0 auto;
+            max-width: 50rem;
             background-color: lightsteelblue;
         }
+
         @media(max-width:50rem) {
             body {
                 padding: 10px;
@@ -24,6 +27,7 @@
             background-color: white;
             padding: 1em;
         }
+
         .footer {
             /* muted text */
             color: darkgrey;
@@ -34,7 +38,8 @@
             align-content: center;
         }
 
-        a, a:visited {
+        a,
+        a:visited {
             color: grey;
             text-decoration: none;
             padding: 0.25em;
@@ -42,35 +47,62 @@
 
         .title {
             padding: 0em;
+            margin-bottom: -1em;
+            color: rgb(36, 36, 36);
         }
 
-        hr {
-   width: 58%;
-   margin-right: auto;
-   margin-left: 0.0em;
-   margin-top: -1.5em;
-   margin-bottom: -1.0em;
-}
+        .badge {
+            border-radius: 50%;
+            background-color: lightcoral;
+            color: #fff;
+            display: inline-flex;
+            padding-left: 10px;
+            padding-right: 10px;
+            text-align: center;
+            justify-content: center;
+        }
+        p {
+            font-size: 0.75em;
+        }
 
     </style>
-  </head>
-  <header style="padding: 2em"></header>
-  <body>
-
-      <div class="container">
+</head>
+<header style="padding: 2em"></header>
+<body>
+    <div class="container">
         <h2 class="title">Ivan Martinez Morales (he/him)</h2>
-        <hr/>
-        <h4>husband, engineer, veteran</h4>
-        <p>Currently at Workiva where I use Go, Java and Dart to build beautiful, reusable product experiences that our customers love.</p>
-        <p>Graduating in May 2021 from Arizona State with a Computer Science degree. Previously at Mailchimp, NASA/ASU Space Grant and US Navy.</p>
-        <p>I ❤️ cycling, hiking, reading, and spending time with my wife, Samaura.</p>
-    <div class="footer">
-      
-      <a href="https://www.twitter.com/ivanmartinezmo" target="_blank"><i class="devicon-twitter-original"></i></a>
-      <a href="https://www.github.com/ivanmartinezmorales" target="_blank"><i class="devicon-github-original"></i></a>
-      <a href="https://www.linkedin.com/in/imartinezmorales" target="_blank"><i class="devicon-linkedin-plain"></i></a>
+        <h4 style="color: darkgray">husband, engineer, veteran</h4>
+        <div style="padding: 0em 1em 0em; margin-bottom: -1em">
+            <h3 style="color:gray">About me:</h3>
+            <p>Currently at Workiva where I use Go, Java and Dart to build beautiful, reusable product experiences that
+                our customers love.</p>
+            <p>Graduating in May 2021 from Arizona State with a Computer Science degree. Previously at Mailchimp,
+                NASA/ASU Space Grant and US Navy.</p>
+            <p>I ❤️ cycling, hiking, reading, and spending time with my wife, Samaura.</p>
+        </div>
+        <!-- Projects -->
+        <div style="padding: 1em">
+            <h3 style="color: gray">Things I've built:</h3>
+            <!-- Dockernetes -->
+            <h4 style="color: gray">Dockernetes - <span style="color: lightsalmon; font-style: italic;">Go, React, Typescript</span></h4>
+            <p>Dockernetes is a platform developed in Go and React that lowers the barrier to entry for developers
+                wishing to use Docker. It has never been easier than now to deploy, maintain and launch a container from
+                within your Kubernetes cluster.</p>
+            <p>Check it out<a href="https://www.github.com/ivanmartinezmorales/dockeretes">on Github</a></p>
+            <h4 style="color: gray">Task Manager - <span style="color: lightsalmon; font-style: italic;">Swift, iOS, XCode</span></h4>
+            <p>Task manager was an iOS application that I developed using SwiftUI. This project demonstrates the ability to call APIs, use state management in SwiftUI, and using CoreData.</p>
+            <p>Check it out<a href="https://www.github.com/ivanmartinezmorales/daily-organizer">on Github</a></p>
+        </div>
+        <!-- Blog posts -->
+        <div class="footer">
+            <a href="https://www.twitter.com/ivanmartinezmo" target="_blank"><i
+                    class="devicon-twitter-original"></i></a>
+            <a href="https://www.github.com/ivanmartinezmorales" target="_blank"><i
+                    class="devicon-github-original"></i></a>
+            <a href="https://www.linkedin.com/in/imartinezmorales" target="_blank"><i
+                    class="devicon-linkedin-plain"></i></a>
+        </div>
     </div>
-    </div>
-  </body>
-</html>
+</body>
 
+</html>
